@@ -302,7 +302,7 @@ function cls_1 () {
 }
 input.onButtonPressed(Button.B, function () {
     切換 += -1
-    if (切換 == 0) {
+    if (切換 <= 0) {
         切換 = 1
     }
 })
@@ -342,13 +342,9 @@ let 班級個位數 = 0
 let 班級十位數 = 0
 let 年級 = 0
 let 切換 = 0
-dataStreamer.setBaudRate(BaudRate.BaudRate9600)
 I2C_LCD1602.LcdInit(39)
-I2C_LCD1602.clear()
 radio.setGroup(1)
 radio.setTransmitPower(7)
-ESP8266_IoT.connectWifi("your_ssid", "your_pwd")
-ESP8266_IoT.connectThingSpeak()
 切換 = 1
 年級 = 0
 班級十位數 = 0
@@ -356,6 +352,7 @@ ESP8266_IoT.connectThingSpeak()
 座號十位數 = 0
 座號個位數 = 0
 箱子代碼 = 0
+I2C_LCD1602.clear()
 basic.forever(function () {
     if (切換 == 1) {
         grade()
