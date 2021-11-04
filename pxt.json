@@ -1,0 +1,34 @@
+{
+    "name": "自動作業點收機A片完全體形態",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "Math-Automatic": "github:DFRobot/pxt-Math-Automatic#08a6c84e26f36132f2946e6b681f7ea55f3e34cc",
+        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0",
+        "Obloq": "github:DFRobot/pxt-Obloq#v1.1.0",
+        "Environment-and-Science-IoT": "github:tinkertanker/pxt-iot-environment-kit#v5.0.7",
+        "data-streamer": "github:microsoft/pxt-data-streamer#v0.1.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v4.0.11",
+        "tag": "v4.0.11",
+        "commits": "https://github.com/microsoft/pxt-microbit/commits/2b9dd6f9b1588b4ad95673b458b3a6eb156bfbd7",
+        "target": "4.0.16",
+        "pxt": "7.0.8",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
